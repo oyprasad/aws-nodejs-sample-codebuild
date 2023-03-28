@@ -1,8 +1,10 @@
-"use strict";
-const awsServerlessExpress = require("aws-serverless-express")
-const app = require("./app")
-const server = awsServerlessExpress.createServer(app)
+/*************Test******************/
+var test = require('unit.js');
+var str = 'Hello, world!';
 
-exports.handler = (event, context) => {
-    awsServerlessExpress.proxy(server, event, context);
-};
+test.string(str).startsWith('Hello');
+
+if (test.string(str).startsWith('Hello')) {
+  console.log('Passed');
+}
+/***********************************/
