@@ -33,3 +33,7 @@ phases:
 #    - appspec.yml
 #    - node_modules/async/*
 #    - node_modules/lodash/*
+
+artifacts:
+  paths:
+    - '*'
